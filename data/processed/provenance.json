@@ -1,0 +1,15 @@
+{
+  "dataset": "elastic_tensor_2015",
+  "url": "https://ndownloader.figshare.com/files/13220603",
+  "storage_mirror": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/13220603/elastic_tensor_2015.json.gz",
+  "sha256": "8c3b342f75da7e7baa1b769b59554485fd647f4cb1da9318d0d1ba3b3b838183",
+  "original_count": 1181,
+  "prepared_count": 1181,
+  "xrd_count": 120,
+  "skipped": [],
+  "citation": "de Jong et al., Charting the complete elastic properties of inorganic crystalline compounds, Scientific Data 2, 150009 (2015).",
+  "doi": "10.1038/sdata.2015.9",
+  "metadata_url": "https://raw.githubusercontent.com/hackingmaterials/matminer/main/src/matminer/datasets/dataset_metadata.json",
+  "property_origin": "DFT-PBE computed reference values; not experimental measurements",
+  "xrd_wavelength_angstrom": 1.5406
+}

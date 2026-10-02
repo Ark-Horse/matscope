@@ -1,0 +1,11 @@
+services:
+  matscope:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - matscope-runtime:/app/data/runtime
+      - matscope-models:/app/artifacts/models
+volumes:
+  matscope-runtime:
+  matscope-models:

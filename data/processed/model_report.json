@@ -1,0 +1,1977 @@
+{
+  "version": "extra-trees-log-v1",
+  "algorithm": "ExtraTrees · log1p targets",
+  "feature_count": 34,
+  "seed": 42,
+  "train_count": 943,
+  "test_count": 238,
+  "split": "按约化化学式分组，80% / 20% 留出测试",
+  "metrics": {
+    "bulk": {
+      "mae": 14.17,
+      "r2": 0.908,
+      "baseline_mae": 58.815
+    },
+    "shear": {
+      "mae": 13.98,
+      "r2": 0.749,
+      "baseline_mae": 32.639
+    }
+  },
+  "feature_importance": [
+    {
+      "name": "volume_per_atom",
+      "value": 0.34435
+    },
+    {
+      "name": "group_min",
+      "value": 0.10236
+    },
+    {
+      "name": "X_min",
+      "value": 0.09079
+    },
+    {
+      "name": "atomic_radius_mean",
+      "value": 0.07367
+    },
+    {
+      "name": "density",
+      "value": 0.03997
+    },
+    {
+      "name": "atomic_radius_min",
+      "value": 0.02837
+    },
+    {
+      "name": "X_mean",
+      "value": 0.02825
+    },
+    {
+      "name": "atomic_radius_max",
+      "value": 0.02796
+    },
+    {
+      "name": "group_mean",
+      "value": 0.02696
+    },
+    {
+      "name": "group_max",
+      "value": 0.02621
+    },
+    {
+      "name": "group_range",
+      "value": 0.02088
+    },
+    {
+      "name": "group_std",
+      "value": 0.01935
+    }
+  ],
+  "samples": [
+    {
+      "id": "mp-165",
+      "formula": "Si",
+      "actual_bulk": 88.97041145,
+      "predicted_bulk": 69.677,
+      "actual_shear": 61.7171899005,
+      "predicted_shear": 39.911
+    },
+    {
+      "id": "mp-149",
+      "formula": "Si",
+      "actual_bulk": 83.0112836733,
+      "predicted_bulk": 69.532,
+      "actual_shear": 61.161031579799996,
+      "predicted_shear": 39.812
+    },
+    {
+      "id": "mp-30",
+      "formula": "Cu",
+      "actual_bulk": 136.219771883,
+      "predicted_bulk": 147.265,
+      "actual_shear": 31.1475961565,
+      "predicted_shear": 60.604
+    },
+    {
+      "id": "mp-134",
+      "formula": "Al",
+      "actual_bulk": 83.2770204697,
+      "predicted_bulk": 86.989,
+      "actual_shear": 23.8501870835,
+      "predicted_shear": 44.796
+    },
+    {
+      "id": "mp-8062",
+      "formula": "SiC",
+      "actual_bulk": 211.380017053,
+      "predicted_bulk": 201.262,
+      "actual_shear": 186.92978677099998,
+      "predicted_shear": 146.832
+    },
+    {
+      "id": "mp-7631",
+      "formula": "SiC",
+      "actual_bulk": 213.098576892,
+      "predicted_bulk": 201.262,
+      "actual_shear": 186.844740323,
+      "predicted_shear": 146.832
+    },
+    {
+      "id": "mp-2658",
+      "formula": "AlFe",
+      "actual_bulk": 174.59095993900002,
+      "predicted_bulk": 174.95,
+      "actual_shear": 95.409985975,
+      "predicted_shear": 97.928
+    },
+    {
+      "id": "mp-1885",
+      "formula": "AlIr",
+      "actual_bulk": 229.308498659,
+      "predicted_bulk": 202.651,
+      "actual_shear": 115.536420464,
+      "predicted_shear": 90.465
+    },
+    {
+      "id": "mp-1487",
+      "formula": "AlNi",
+      "actual_bulk": 161.5785726,
+      "predicted_bulk": 165.934,
+      "actual_shear": 71.9319843282,
+      "predicted_shear": 91.234
+    },
+    {
+      "id": "mp-829",
+      "formula": "AlPd",
+      "actual_bulk": 156.423388148,
+      "predicted_bulk": 148.305,
+      "actual_shear": 52.053538046899995,
+      "predicted_shear": 58.081
+    },
+    {
+      "id": "mp-364",
+      "formula": "AlRh",
+      "actual_bulk": 195.916057495,
+      "predicted_bulk": 172.517,
+      "actual_shear": 102.224707397,
+      "predicted_shear": 78.168
+    },
+    {
+      "id": "mp-11",
+      "formula": "As",
+      "actual_bulk": 42.8330650461,
+      "predicted_bulk": 56.484,
+      "actual_shear": 28.2875455929,
+      "predicted_shear": 38.229
+    },
+    {
+      "id": "mp-2773",
+      "formula": "BeCo",
+      "actual_bulk": 195.110143586,
+      "predicted_bulk": 163.416,
+      "actual_shear": 117.76013212,
+      "predicted_shear": 99.71
+    },
+    {
+      "id": "mp-11286",
+      "formula": "CaHg",
+      "actual_bulk": 35.024466178800004,
+      "predicted_bulk": 36.695,
+      "actual_shear": 19.49705693,
+      "predicted_shear": 16.058
+    },
+    {
+      "id": "mp-949",
+      "formula": "CoPt",
+      "actual_bulk": 215.90012018599998,
+      "predicted_bulk": 213.993,
+      "actual_shear": 107.999065929,
+      "predicted_shear": 85.098
+    },
+    {
+      "id": "mp-2090",
+      "formula": "FeCo",
+      "actual_bulk": 189.17969787,
+      "predicted_bulk": 192.296,
+      "actual_shear": 90.718808298,
+      "predicted_shear": 94.037
+    },
+    {
+      "id": "mp-2831",
+      "formula": "FePd",
+      "actual_bulk": 162.422104642,
+      "predicted_bulk": 169.882,
+      "actual_shear": 76.0286644979,
+      "predicted_shear": 64.987
+    },
+    {
+      "id": "mp-2260",
+      "formula": "FePt",
+      "actual_bulk": 201.19360602700002,
+      "predicted_bulk": 203.211,
+      "actual_shear": 92.39026057790001,
+      "predicted_shear": 76.7
+    },
+    {
+      "id": "mp-10173",
+      "formula": "Li",
+      "actual_bulk": 13.832294731500001,
+      "predicted_bulk": 31.23,
+      "actual_shear": 5.98847618796,
+      "predicted_shear": 17.27
+    },
+    {
+      "id": "mp-135",
+      "formula": "Li",
+      "actual_bulk": 14.012876970699999,
+      "predicted_bulk": 31.135,
+      "actual_shear": 4.48015909363,
+      "predicted_shear": 17.158
+    },
+    {
+      "id": "mp-2743",
+      "formula": "LiPd",
+      "actual_bulk": 72.77562809060001,
+      "predicted_bulk": 85.134,
+      "actual_shear": 27.288473750300003,
+      "predicted_shear": 38.183
+    },
+    {
+      "id": "mp-2744",
+      "formula": "LiPd",
+      "actual_bulk": 78.6971473798,
+      "predicted_bulk": 81.68,
+      "actual_shear": 33.28833601,
+      "predicted_shear": 36.433
+    },
+    {
+      "id": "mp-11807",
+      "formula": "LiPt",
+      "actual_bulk": 114.707017588,
+      "predicted_bulk": 116.797,
+      "actual_shear": 51.3489943343,
+      "predicted_shear": 46.804
+    },
+    {
+      "id": "mp-2728",
+      "formula": "MnIr",
+      "actual_bulk": 266.874637013,
+      "predicted_bulk": 246.693,
+      "actual_shear": 182.587371605,
+      "predicted_shear": 106.434
+    },
+    {
+      "id": "mp-417",
+      "formula": "MnRh",
+      "actual_bulk": 182.50224788900002,
+      "predicted_bulk": 201.612,
+      "actual_shear": 81.1795527964,
+      "predicted_shear": 83.164
+    },
+    {
+      "id": "mp-2305",
+      "formula": "MoC",
+      "actual_bulk": 349.847926409,
+      "predicted_bulk": 240.178,
+      "actual_shear": 239.799141657,
+      "predicted_shear": 139.214
+    },
+    {
+      "id": "mp-11256",
+      "formula": "ScAu",
+      "actual_bulk": 102.787192456,
+      "predicted_bulk": 105.209,
+      "actual_shear": 36.8086441433,
+      "predicted_shear": 38.251
+    },
+    {
+      "id": "mp-892",
+      "formula": "ScPt",
+      "actual_bulk": 135.97902570899998,
+      "predicted_bulk": 144.229,
+      "actual_shear": 40.4322759281,
+      "predicted_shear": 52.901
+    },
+    {
+      "id": "mp-11572",
+      "formula": "TaTc",
+      "actual_bulk": 254.641370338,
+      "predicted_bulk": 235.505,
+      "actual_shear": 130.421799082,
+      "predicted_shear": 83.773
+    },
+    {
+      "id": "mp-1526",
+      "formula": "TiHg",
+      "actual_bulk": 104.196656913,
+      "predicted_bulk": 119.779,
+      "actual_shear": 48.7643177903,
+      "predicted_shear": 47.926
+    },
+    {
+      "id": "mp-2583",
+      "formula": "TiRh",
+      "actual_bulk": 189.534059353,
+      "predicted_bulk": 185.575,
+      "actual_shear": 49.3735228783,
+      "predicted_shear": 69.681
+    },
+    {
+      "id": "mp-11573",
+      "formula": "TiTc",
+      "actual_bulk": 206.535266856,
+      "predicted_bulk": 179.721,
+      "actual_shear": 71.7527605504,
+      "predicted_shear": 65.146
+    },
+    {
+      "id": "mp-2678",
+      "formula": "VPt",
+      "actual_bulk": 242.97353236200001,
+      "predicted_bulk": 226.848,
+      "actual_shear": 140.77442847,
+      "predicted_shear": 96.502
+    },
+    {
+      "id": "mp-1395",
+      "formula": "VRu",
+      "actual_bulk": 252.416430032,
+      "predicted_bulk": 225.937,
+      "actual_shear": 75.9440308149,
+      "predicted_shear": 100.573
+    },
+    {
+      "id": "mp-1894",
+      "formula": "WC",
+      "actual_bulk": 385.194239656,
+      "predicted_bulk": 295.865,
+      "actual_shear": 278.958668729,
+      "predicted_shear": 168.512
+    },
+    {
+      "id": "mp-915",
+      "formula": "YCd",
+      "actual_bulk": 56.892684225299995,
+      "predicted_bulk": 55.657,
+      "actual_shear": 24.8288556894,
+      "predicted_shear": 27.262
+    },
+    {
+      "id": "mp-712",
+      "formula": "YCu",
+      "actual_bulk": 70.2421136431,
+      "predicted_bulk": 73.572,
+      "actual_shear": 35.232019496199996,
+      "predicted_shear": 29.06
+    },
+    {
+      "id": "mp-12794",
+      "formula": "Al2Cu",
+      "actual_bulk": 90.12424590399999,
+      "predicted_bulk": 104.653,
+      "actual_shear": 49.7854482218,
+      "predicted_shear": 50.855
+    },
+    {
+      "id": "mp-2553",
+      "formula": "HfBe2",
+      "actual_bulk": 128.485270229,
+      "predicted_bulk": 140.5,
+      "actual_shear": 103.359807692,
+      "predicted_shear": 89.043
+    },
+    {
+      "id": "mp-11470",
+      "formula": "Hg2Pt",
+      "actual_bulk": 83.4766763659,
+      "predicted_bulk": 81.52,
+      "actual_shear": 26.5424842757,
+      "predicted_shear": 29.065
+    },
+    {
+      "id": "mp-11870",
+      "formula": "Hg2Rh",
+      "actual_bulk": 87.74342095979999,
+      "predicted_bulk": 94.481,
+      "actual_shear": 38.586607518600005,
+      "predicted_shear": 34.052
+    },
+    {
+      "id": "mp-728",
+      "formula": "Li2Pd",
+      "actual_bulk": 47.9551573517,
+      "predicted_bulk": 49.347,
+      "actual_shear": 21.411511409000003,
+      "predicted_shear": 22.321
+    },
+    {
+      "id": "mp-7088",
+      "formula": "Ta2C",
+      "actual_bulk": 255.96348365900002,
+      "predicted_bulk": 248.302,
+      "actual_shear": 138.252679502,
+      "predicted_shear": 130.703
+    },
+    {
+      "id": "mp-19",
+      "formula": "Te",
+      "actual_bulk": 21.6898178438,
+      "predicted_bulk": 34.323,
+      "actual_shear": 14.7163142482,
+      "predicted_shear": 21.391
+    },
+    {
+      "id": "mp-567313",
+      "formula": "Te",
+      "actual_bulk": 21.8138690976,
+      "predicted_bulk": 34.333,
+      "actual_shear": 14.885356314800001,
+      "predicted_shear": 21.429
+    },
+    {
+      "id": "mp-1331",
+      "formula": "YCd2",
+      "actual_bulk": 55.7033902913,
+      "predicted_bulk": 60.051,
+      "actual_shear": 31.5931690818,
+      "predicted_shear": 27.498
+    },
+    {
+      "id": "mp-30725",
+      "formula": "YHg2",
+      "actual_bulk": 64.3844355921,
+      "predicted_bulk": 62.84,
+      "actual_shear": 29.0771378279,
+      "predicted_shear": 23.179
+    },
+    {
+      "id": "mp-661",
+      "formula": "AlN",
+      "actual_bulk": 194.405488958,
+      "predicted_bulk": 197.194,
+      "actual_shear": 121.531014163,
+      "predicted_shear": 124.795
+    },
+    {
+      "id": "mp-922",
+      "formula": "CoPt3",
+      "actual_bulk": 220.629335072,
+      "predicted_bulk": 236.906,
+      "actual_shear": 91.3885939807,
+      "predicted_shear": 93.748
+    },
+    {
+      "id": "mp-2644",
+      "formula": "CoSb",
+      "actual_bulk": 136.688730337,
+      "predicted_bulk": 125.128,
+      "actual_shear": 68.7604210282,
+      "predicted_shear": 60.453
+    },
+    {
+      "id": "mp-2619",
+      "formula": "FeSb",
+      "actual_bulk": 93.5109399544,
+      "predicted_bulk": 109.502,
+      "actual_shear": 54.0545240286,
+      "predicted_shear": 54.131
+    },
+    {
+      "id": "mp-8882",
+      "formula": "GaP",
+      "actual_bulk": 76.4353498355,
+      "predicted_bulk": 71.822,
+      "actual_shear": 51.1647366368,
+      "predicted_shear": 39.627
+    },
+    {
+      "id": "mp-1027",
+      "formula": "HfRh3",
+      "actual_bulk": 219.04991186900003,
+      "predicted_bulk": 208.286,
+      "actual_shear": 116.304975933,
+      "predicted_shear": 88.486
+    },
+    {
+      "id": "mp-74",
+      "formula": "Rh",
+      "actual_bulk": 253.45671945400002,
+      "predicted_bulk": 266.731,
+      "actual_shear": 144.847429127,
+      "predicted_shear": 131.998
+    },
+    {
+      "id": "mp-11300",
+      "formula": "TiCdHg2",
+      "actual_bulk": 72.6960402398,
+      "predicted_bulk": 101.294,
+      "actual_shear": 28.4475779471,
+      "predicted_shear": 40.278
+    },
+    {
+      "id": "mp-12107",
+      "formula": "TiPt3",
+      "actual_bulk": 237.05709543400002,
+      "predicted_bulk": 226.741,
+      "actual_shear": 113.28691779100001,
+      "predicted_shear": 94.376
+    },
+    {
+      "id": "mp-11231",
+      "formula": "YAl3",
+      "actual_bulk": 76.3174464751,
+      "predicted_bulk": 82.628,
+      "actual_shear": 62.6353457978,
+      "predicted_shear": 44.606
+    },
+    {
+      "id": "mp-2403",
+      "formula": "YPt3",
+      "actual_bulk": 171.877604259,
+      "predicted_bulk": 176.116,
+      "actual_shear": 70.7402848844,
+      "predicted_shear": 68.076
+    },
+    {
+      "id": "mp-11571",
+      "formula": "YSn3",
+      "actual_bulk": 61.9185747501,
+      "predicted_bulk": 59.238,
+      "actual_shear": 13.9791689774,
+      "predicted_shear": 32.029
+    },
+    {
+      "id": "mp-30856",
+      "formula": "ZnPt3",
+      "actual_bulk": 213.416222608,
+      "predicted_bulk": 207.012,
+      "actual_shear": 68.3607512371,
+      "predicted_shear": 70.443
+    },
+    {
+      "id": "mp-22793",
+      "formula": "AlFe3C",
+      "actual_bulk": 230.12027895900002,
+      "predicted_bulk": 214.992,
+      "actual_shear": 97.5499157597,
+      "predicted_shear": 114.925
+    },
+    {
+      "id": "mp-2998",
+      "formula": "BaTiO3",
+      "actual_bulk": 163.211279508,
+      "predicted_bulk": 85.244,
+      "actual_shear": 106.714189444,
+      "predicted_shear": 44.92
+    },
+    {
+      "id": "mp-5229",
+      "formula": "SrTiO3",
+      "actual_bulk": 172.73844260200002,
+      "predicted_bulk": 91.845,
+      "actual_shear": 109.620369806,
+      "predicted_shear": 49.069
+    },
+    {
+      "id": "mp-10435",
+      "formula": "Y(AlSi)2",
+      "actual_bulk": 76.9639228911,
+      "predicted_bulk": 86.669,
+      "actual_shear": 40.4618654717,
+      "predicted_shear": 51.777
+    },
+    {
+      "id": "mp-22120",
+      "formula": "YRh3C",
+      "actual_bulk": 196.64522770099998,
+      "predicted_bulk": 161.759,
+      "actual_shear": 79.5159993161,
+      "predicted_shear": 77.46
+    },
+    {
+      "id": "mp-11826",
+      "formula": "CaPd5",
+      "actual_bulk": 113.435880798,
+      "predicted_bulk": 111.245,
+      "actual_shear": 49.4366824224,
+      "predicted_shear": 42.974
+    },
+    {
+      "id": "mp-30488",
+      "formula": "CdHg2",
+      "actual_bulk": 28.2120870975,
+      "predicted_bulk": 38.028,
+      "actual_shear": 5.19484250043,
+      "predicted_shear": 13.847
+    },
+    {
+      "id": "mp-22498",
+      "formula": "CrSb2",
+      "actual_bulk": 62.122873636099996,
+      "predicted_bulk": 71.253,
+      "actual_shear": 31.9912411626,
+      "predicted_shear": 39.911
+    },
+    {
+      "id": "mp-12693",
+      "formula": "Mg2Rh",
+      "actual_bulk": 65.4988636148,
+      "predicted_bulk": 82.916,
+      "actual_shear": 39.8724136051,
+      "predicted_shear": 38.799
+    },
+    {
+      "id": "mp-11464",
+      "formula": "MgHg2",
+      "actual_bulk": 40.6277336583,
+      "predicted_bulk": 49.152,
+      "actual_shear": 12.3711555555,
+      "predicted_shear": 18.976
+    },
+    {
+      "id": "mp-11514",
+      "formula": "NbPt2",
+      "actual_bulk": 244.360582359,
+      "predicted_bulk": 242.29,
+      "actual_shear": 108.107796024,
+      "predicted_shear": 98.851
+    },
+    {
+      "id": "mp-1285",
+      "formula": "PtO2",
+      "actual_bulk": 203.59099999999998,
+      "predicted_bulk": 151.451,
+      "actual_shear": 87.34100000000001,
+      "predicted_shear": 74.736
+    },
+    {
+      "id": "mp-7192",
+      "formula": "Sc2Sb",
+      "actual_bulk": 72.7400250033,
+      "predicted_bulk": 68.179,
+      "actual_shear": 40.3916942786,
+      "predicted_shear": 36.664
+    },
+    {
+      "id": "mp-16481",
+      "formula": "TiAlAu",
+      "actual_bulk": 128.112688265,
+      "predicted_bulk": 139.611,
+      "actual_shear": 57.629576407600005,
+      "predicted_shear": 48.077
+    },
+    {
+      "id": "mp-19983",
+      "formula": "TiCuSn",
+      "actual_bulk": 102.80917605299999,
+      "predicted_bulk": 131.445,
+      "actual_shear": 52.0324556429,
+      "predicted_shear": 59.516
+    },
+    {
+      "id": "mp-11549",
+      "formula": "VPd2",
+      "actual_bulk": 190.135945762,
+      "predicted_bulk": 183.303,
+      "actual_shear": 75.574268354,
+      "predicted_shear": 76.847
+    },
+    {
+      "id": "mp-13202",
+      "formula": "YCuSn",
+      "actual_bulk": 75.8205294514,
+      "predicted_bulk": 74.024,
+      "actual_shear": 51.8418024854,
+      "predicted_shear": 38.354
+    },
+    {
+      "id": "mp-30028",
+      "formula": "YSi2Rh3",
+      "actual_bulk": 174.086945115,
+      "predicted_bulk": 149.193,
+      "actual_shear": 98.8596761462,
+      "predicted_shear": 75.462
+    },
+    {
+      "id": "mp-22179",
+      "formula": "YTiSi",
+      "actual_bulk": 89.4537355941,
+      "predicted_bulk": 86.839,
+      "actual_shear": 49.2270129363,
+      "predicted_shear": 54.75
+    },
+    {
+      "id": "mp-30885",
+      "formula": "YZn5",
+      "actual_bulk": 78.74249525489999,
+      "predicted_bulk": 86.833,
+      "actual_shear": 48.357623338100005,
+      "predicted_shear": 46.317
+    },
+    {
+      "id": "mp-570744",
+      "formula": "Si3As4",
+      "actual_bulk": 59.0419363466,
+      "predicted_bulk": 66.719,
+      "actual_shear": 38.9198941337,
+      "predicted_shear": 38.117
+    },
+    {
+      "id": "mp-22919",
+      "formula": "AgI",
+      "actual_bulk": 31.7078080889,
+      "predicted_bulk": 38.92,
+      "actual_shear": 10.7430177679,
+      "predicted_shear": 15.972
+    },
+    {
+      "id": "mp-12802",
+      "formula": "AlCu3",
+      "actual_bulk": 133.027502384,
+      "predicted_bulk": 148.029,
+      "actual_shear": 45.7426550892,
+      "predicted_shear": 66.897
+    },
+    {
+      "id": "mp-7189",
+      "formula": "AlPd",
+      "actual_bulk": 147.90690373,
+      "predicted_bulk": 147.111,
+      "actual_shear": 65.1493150149,
+      "predicted_shear": 56.58
+    },
+    {
+      "id": "mp-10904",
+      "formula": "AlPt",
+      "actual_bulk": 184.17775997400003,
+      "predicted_bulk": 175.917,
+      "actual_shear": 73.5861793946,
+      "predicted_shear": 67.801
+    },
+    {
+      "id": "mp-1342",
+      "formula": "BaO",
+      "actual_bulk": 68.3565084635,
+      "predicted_bulk": 56.014,
+      "actual_shear": 37.7462310419,
+      "predicted_shear": 25.424
+    },
+    {
+      "id": "mp-30365",
+      "formula": "BeAu",
+      "actual_bulk": 147.92919885,
+      "predicted_bulk": 176.021,
+      "actual_shear": 40.968450410900004,
+      "predicted_shear": 78.429
+    },
+    {
+      "id": "mp-1563",
+      "formula": "CaSi",
+      "actual_bulk": 53.2686916925,
+      "predicted_bulk": 49.584,
+      "actual_shear": 37.7933081744,
+      "predicted_shear": 34.234
+    },
+    {
+      "id": "mp-2691",
+      "formula": "CdSe",
+      "actual_bulk": 44.8367718317,
+      "predicted_bulk": 41.875,
+      "actual_shear": 15.295983349,
+      "predicted_shear": 18.145
+    },
+    {
+      "id": "mp-1609",
+      "formula": "Cr3Ir",
+      "actual_bulk": 275.796276668,
+      "predicted_bulk": 241.342,
+      "actual_shear": 103.695921321,
+      "predicted_shear": 95.504
+    },
+    {
+      "id": "mp-13138",
+      "formula": "Cu3Sn",
+      "actual_bulk": 106.418485103,
+      "predicted_bulk": 108.207,
+      "actual_shear": 37.1287833849,
+      "predicted_shear": 38.858
+    },
+    {
+      "id": "mp-2490",
+      "formula": "GaP",
+      "actual_bulk": 76.1868498328,
+      "predicted_bulk": 71.989,
+      "actual_shear": 51.7754273479,
+      "predicted_shear": 39.858
+    },
+    {
+      "id": "mp-10759",
+      "formula": "GeSe",
+      "actual_bulk": 58.191710701999995,
+      "predicted_bulk": 53.463,
+      "actual_shear": 44.6198235233,
+      "predicted_shear": 31.583
+    },
+    {
+      "id": "mp-700",
+      "formula": "GeSe",
+      "actual_bulk": 21.1166705441,
+      "predicted_bulk": 51.123,
+      "actual_shear": 14.301847197899999,
+      "predicted_shear": 29.061
+    },
+    {
+      "id": "mp-4893",
+      "formula": "Hf2SnC",
+      "actual_bulk": 137.85300643899998,
+      "predicted_bulk": 143.455,
+      "actual_shear": 86.15723758719999,
+      "predicted_shear": 74.988
+    },
+    {
+      "id": "mp-2614",
+      "formula": "HfAl3",
+      "actual_bulk": 106.737290372,
+      "predicted_bulk": 122.338,
+      "actual_shear": 83.4766837601,
+      "predicted_shear": 70.515
+    },
+    {
+      "id": "mp-20401",
+      "formula": "HfCuSi2",
+      "actual_bulk": 135.422553921,
+      "predicted_bulk": 156.201,
+      "actual_shear": 86.6763716525,
+      "predicted_shear": 81.243
+    },
+    {
+      "id": "mp-1042",
+      "formula": "HfSi",
+      "actual_bulk": 152.654742356,
+      "predicted_bulk": 150.656,
+      "actual_shear": 95.61136195969999,
+      "predicted_shear": 85.119
+    },
+    {
+      "id": "mp-20305",
+      "formula": "InAs",
+      "actual_bulk": 49.159150902200004,
+      "predicted_bulk": 43.323,
+      "actual_shear": 25.1304121085,
+      "predicted_shear": 22.125
+    },
+    {
+      "id": "mp-1138",
+      "formula": "LiF",
+      "actual_bulk": 69.88112627,
+      "predicted_bulk": 66.306,
+      "actual_shear": 50.9433940118,
+      "predicted_shear": 45.444
+    },
+    {
+      "id": "mp-14793",
+      "formula": "Mg2SiPt",
+      "actual_bulk": 98.63140251870001,
+      "predicted_bulk": 104.127,
+      "actual_shear": 59.735162521199996,
+      "predicted_shear": 50.461
+    },
+    {
+      "id": "mp-1120",
+      "formula": "Mo3Ir",
+      "actual_bulk": 288.168360516,
+      "predicted_bulk": 251.444,
+      "actual_shear": 108.40724366299999,
+      "predicted_shear": 102.499
+    },
+    {
+      "id": "mp-801",
+      "formula": "Mo3Os",
+      "actual_bulk": 291.944530488,
+      "predicted_bulk": 251.695,
+      "actual_shear": 120.11973335799999,
+      "predicted_shear": 103.099
+    },
+    {
+      "id": "mp-11482",
+      "formula": "MoIr3",
+      "actual_bulk": 336.958408077,
+      "predicted_bulk": 311.712,
+      "actual_shear": 187.708714661,
+      "predicted_shear": 181.393
+    },
+    {
+      "id": "mp-2663",
+      "formula": "Nb3Pt",
+      "actual_bulk": 207.216592235,
+      "predicted_bulk": 201.645,
+      "actual_shear": 80.2714409078,
+      "predicted_shear": 77.738
+    },
+    {
+      "id": "mp-910",
+      "formula": "NbC",
+      "actual_bulk": 300.148044888,
+      "predicted_bulk": 241.673,
+      "actual_shear": 196.80312262799998,
+      "predicted_shear": 152.731
+    },
+    {
+      "id": "mp-19009",
+      "formula": "NiO",
+      "actual_bulk": 181.28989990099998,
+      "predicted_bulk": 147.451,
+      "actual_shear": 97.5771677472,
+      "predicted_shear": 62.541
+    },
+    {
+      "id": "mp-715434",
+      "formula": "NiO",
+      "actual_bulk": 183.165,
+      "predicted_bulk": 147.451,
+      "actual_shear": 98.51700000000001,
+      "predicted_shear": 62.541
+    },
+    {
+      "id": "mp-7948",
+      "formula": "ReSi",
+      "actual_bulk": 246.269737962,
+      "predicted_bulk": 231.59,
+      "actual_shear": 93.2300952578,
+      "predicted_shear": 118.839
+    },
+    {
+      "id": "mp-615314",
+      "formula": "ScCoC2",
+      "actual_bulk": 200.663613121,
+      "predicted_bulk": 196.881,
+      "actual_shear": 102.825872651,
+      "predicted_shear": 127.561
+    },
+    {
+      "id": "mp-9969",
+      "formula": "ScSi",
+      "actual_bulk": 101.326806676,
+      "predicted_bulk": 95.14,
+      "actual_shear": 70.2531823194,
+      "predicted_shear": 64.181
+    },
+    {
+      "id": "mp-389",
+      "formula": "SiPd",
+      "actual_bulk": 148.94735003899999,
+      "predicted_bulk": 156.878,
+      "actual_shear": 58.1939495479,
+      "predicted_shear": 54.456
+    },
+    {
+      "id": "mp-1483",
+      "formula": "SiRh",
+      "actual_bulk": 221.451359082,
+      "predicted_bulk": 197.952,
+      "actual_shear": 83.2867505396,
+      "predicted_shear": 88.049
+    },
+    {
+      "id": "mp-2287",
+      "formula": "SiRh",
+      "actual_bulk": 183.609372272,
+      "predicted_bulk": 195.387,
+      "actual_shear": 90.32704615979999,
+      "predicted_shear": 87.88
+    },
+    {
+      "id": "mp-818",
+      "formula": "SiRh",
+      "actual_bulk": 195.08604099599998,
+      "predicted_bulk": 192.254,
+      "actual_shear": 95.10509962260001,
+      "predicted_shear": 87.048
+    },
+    {
+      "id": "mp-2369",
+      "formula": "SnPd",
+      "actual_bulk": 101.038715329,
+      "predicted_bulk": 112.85,
+      "actual_shear": 35.9774042814,
+      "predicted_shear": 33.947
+    },
+    {
+      "id": "mp-869",
+      "formula": "TaAl3",
+      "actual_bulk": 132.791498373,
+      "predicted_bulk": 142.294,
+      "actual_shear": 103.531779679,
+      "predicted_shear": 77.02
+    },
+    {
+      "id": "mp-3871",
+      "formula": "Ti2SnC",
+      "actual_bulk": 135.396013187,
+      "predicted_bulk": 150.634,
+      "actual_shear": 91.92181752489999,
+      "predicted_shear": 80.421
+    },
+    {
+      "id": "mp-1786",
+      "formula": "Ti3Au",
+      "actual_bulk": 138.996263735,
+      "predicted_bulk": 147.328,
+      "actual_shear": 70.7348658817,
+      "predicted_shear": 46.084
+    },
+    {
+      "id": "mp-12546",
+      "formula": "TiCu3",
+      "actual_bulk": 139.58006664200002,
+      "predicted_bulk": 142.364,
+      "actual_shear": 51.3409325107,
+      "predicted_shear": 61.015
+    },
+    {
+      "id": "mp-1585",
+      "formula": "V3Co",
+      "actual_bulk": 210.63075074099999,
+      "predicted_bulk": 190.806,
+      "actual_shear": 109.847173481,
+      "predicted_shear": 75.494
+    },
+    {
+      "id": "mp-1555",
+      "formula": "V3Sb",
+      "actual_bulk": 178.286013965,
+      "predicted_bulk": 146.839,
+      "actual_shear": 79.3079705951,
+      "predicted_shear": 42.783
+    },
+    {
+      "id": "mp-215",
+      "formula": "YSb",
+      "actual_bulk": 61.6664777588,
+      "predicted_bulk": 49.529,
+      "actual_shear": 34.4108280471,
+      "predicted_shear": 26.333
+    },
+    {
+      "id": "mp-30477",
+      "formula": "LiCaSn",
+      "actual_bulk": 32.8082046346,
+      "predicted_bulk": 42.27,
+      "actual_shear": 26.0849770237,
+      "predicted_shear": 24.122
+    },
+    {
+      "id": "mp-14208",
+      "formula": "LiYSi",
+      "actual_bulk": 62.0890626472,
+      "predicted_bulk": 60.182,
+      "actual_shear": 47.65770778939999,
+      "predicted_shear": 39.441
+    },
+    {
+      "id": "mp-12696",
+      "formula": "YMgPd",
+      "actual_bulk": 70.1809317852,
+      "predicted_bulk": 60.721,
+      "actual_shear": 20.3542456847,
+      "predicted_shear": 22.522
+    },
+    {
+      "id": "mp-11272",
+      "formula": "Be2Nb3",
+      "actual_bulk": 165.10967723,
+      "predicted_bulk": 154.846,
+      "actual_shear": 78.40610419069999,
+      "predicted_shear": 77.635
+    },
+    {
+      "id": "mp-27505",
+      "formula": "Fe3Sn2",
+      "actual_bulk": 107.562287939,
+      "predicted_bulk": 125.83,
+      "actual_shear": 57.0608940984,
+      "predicted_shear": 55.563
+    },
+    {
+      "id": "mp-571367",
+      "formula": "Hf(CoSi)2",
+      "actual_bulk": 190.49955126700002,
+      "predicted_bulk": 181.307,
+      "actual_shear": 105.564663196,
+      "predicted_shear": 91.245
+    },
+    {
+      "id": "mp-12565",
+      "formula": "MnAu4",
+      "actual_bulk": 128.546023663,
+      "predicted_bulk": 132.331,
+      "actual_shear": 30.9264428263,
+      "predicted_shear": 34.705
+    },
+    {
+      "id": "mp-998",
+      "formula": "Al2Cu",
+      "actual_bulk": 99.38456530059999,
+      "predicted_bulk": 107.013,
+      "actual_shear": 40.2118018157,
+      "predicted_shear": 52.966
+    },
+    {
+      "id": "mp-16526",
+      "formula": "AlPt2",
+      "actual_bulk": 204.536912476,
+      "predicted_bulk": 197.699,
+      "actual_shear": 57.779264975,
+      "predicted_shear": 68.76
+    },
+    {
+      "id": "mp-11275",
+      "formula": "Be2Re",
+      "actual_bulk": 242.30435883799998,
+      "predicted_bulk": 188.156,
+      "actual_shear": 172.886838953,
+      "predicted_shear": 136.62
+    },
+    {
+      "id": "mp-13364",
+      "formula": "CaZn2",
+      "actual_bulk": 47.753661746000006,
+      "predicted_bulk": 54.386,
+      "actual_shear": 28.202842809499998,
+      "predicted_shear": 27.782
+    },
+    {
+      "id": "mp-1725",
+      "formula": "CaZn2",
+      "actual_bulk": 44.504586068,
+      "predicted_bulk": 51.965,
+      "actual_shear": 24.1445853649,
+      "predicted_shear": 26.54
+    },
+    {
+      "id": "mp-16246",
+      "formula": "CdSbAu",
+      "actual_bulk": 70.5401352455,
+      "predicted_bulk": 63.681,
+      "actual_shear": 13.9644871181,
+      "predicted_shear": 22.984
+    },
+    {
+      "id": "mp-11449",
+      "formula": "HfMn2",
+      "actual_bulk": 192.321949544,
+      "predicted_bulk": 185.944,
+      "actual_shear": 53.07836846520001,
+      "predicted_shear": 70.809
+    },
+    {
+      "id": "mp-1069",
+      "formula": "HfSi2",
+      "actual_bulk": 131.919118005,
+      "predicted_bulk": 149.143,
+      "actual_shear": 93.55095234219999,
+      "predicted_shear": 83.278
+    },
+    {
+      "id": "mp-13472",
+      "formula": "HfSiRh",
+      "actual_bulk": 189.66670987,
+      "predicted_bulk": 179.362,
+      "actual_shear": 96.8488911521,
+      "predicted_shear": 92.537
+    },
+    {
+      "id": "mp-10746",
+      "formula": "Mg2Cu3Si",
+      "actual_bulk": 98.1164321959,
+      "predicted_bulk": 112.858,
+      "actual_shear": 63.7262062529,
+      "predicted_shear": 62.738
+    },
+    {
+      "id": "mp-3522",
+      "formula": "MgCuSb",
+      "actual_bulk": 67.6102881388,
+      "predicted_bulk": 66.343,
+      "actual_shear": 36.7478569092,
+      "predicted_shear": 31.911
+    },
+    {
+      "id": "mp-11361",
+      "formula": "MgCuSn",
+      "actual_bulk": 63.1475331377,
+      "predicted_bulk": 67.777,
+      "actual_shear": 29.810050905500002,
+      "predicted_shear": 33.162
+    },
+    {
+      "id": "mp-10183",
+      "formula": "MgSbPd",
+      "actual_bulk": 80.6590789768,
+      "predicted_bulk": 66.127,
+      "actual_shear": 28.9104853688,
+      "predicted_shear": 29.764
+    },
+    {
+      "id": "mp-10184",
+      "formula": "MgSbPt",
+      "actual_bulk": 88.6931427228,
+      "predicted_bulk": 78.338,
+      "actual_shear": 35.1509521824,
+      "predicted_shear": 32.071
+    },
+    {
+      "id": "mp-5676",
+      "formula": "MnSbPt",
+      "actual_bulk": 110.48096648399999,
+      "predicted_bulk": 112.632,
+      "actual_shear": 29.141770022600003,
+      "predicted_shear": 32.382
+    },
+    {
+      "id": "mp-22565",
+      "formula": "MnSiRh",
+      "actual_bulk": 153.52084602600002,
+      "predicted_bulk": 178.556,
+      "actual_shear": 69.4731477408,
+      "predicted_shear": 83.307
+    },
+    {
+      "id": "mp-22027",
+      "formula": "MnSnAu",
+      "actual_bulk": 80.0316048656,
+      "predicted_bulk": 95.096,
+      "actual_shear": 20.1293351512,
+      "predicted_shear": 32.732
+    },
+    {
+      "id": "mp-1552",
+      "formula": "Mo2C",
+      "actual_bulk": 294.336569413,
+      "predicted_bulk": 221.381,
+      "actual_shear": 149.61685495,
+      "predicted_shear": 114.482
+    },
+    {
+      "id": "mp-1969",
+      "formula": "NbSb2",
+      "actual_bulk": 96.9726516142,
+      "predicted_bulk": 88.949,
+      "actual_shear": 69.2847447526,
+      "predicted_shear": 49.775
+    },
+    {
+      "id": "mp-505297",
+      "formula": "NbSbRu",
+      "actual_bulk": 168.107387263,
+      "predicted_bulk": 140.757,
+      "actual_shear": 66.3054805638,
+      "predicted_shear": 47.859
+    },
+    {
+      "id": "mp-21248",
+      "formula": "NbSiIr",
+      "actual_bulk": 244.521515794,
+      "predicted_bulk": 215.358,
+      "actual_shear": 121.17360965700001,
+      "predicted_shear": 98.564
+    },
+    {
+      "id": "mp-1356",
+      "formula": "Sb2Pd",
+      "actual_bulk": 84.4596244457,
+      "predicted_bulk": 87.719,
+      "actual_shear": 28.1716773966,
+      "predicted_shear": 39.281
+    },
+    {
+      "id": "mp-567750",
+      "formula": "ScRu2",
+      "actual_bulk": 189.909545913,
+      "predicted_bulk": 160.904,
+      "actual_shear": 49.3016497563,
+      "predicted_shear": 60.17
+    },
+    {
+      "id": "mp-20492",
+      "formula": "ScSiRh",
+      "actual_bulk": 147.84860517,
+      "predicted_bulk": 138.1,
+      "actual_shear": 73.8336122732,
+      "predicted_shear": 71.909
+    },
+    {
+      "id": "mp-10025",
+      "formula": "SiRu2",
+      "actual_bulk": 256.768080753,
+      "predicted_bulk": 217.842,
+      "actual_shear": 101.94779791200001,
+      "predicted_shear": 99.862
+    },
+    {
+      "id": "mp-565",
+      "formula": "Sn2Rh",
+      "actual_bulk": 108.14300561600001,
+      "predicted_bulk": 119.404,
+      "actual_shear": 45.912978183999996,
+      "predicted_shear": 50.228
+    },
+    {
+      "id": "mp-11278",
+      "formula": "Ta2Be",
+      "actual_bulk": 186.81799206099998,
+      "predicted_bulk": 178.517,
+      "actual_shear": 116.684663135,
+      "predicted_shear": 78.993
+    },
+    {
+      "id": "mp-12678",
+      "formula": "TaMn2",
+      "actual_bulk": 242.600071514,
+      "predicted_bulk": 225.543,
+      "actual_shear": 88.3875766742,
+      "predicted_shear": 82.931
+    },
+    {
+      "id": "mp-10755",
+      "formula": "TiFeSb",
+      "actual_bulk": 113.40134736,
+      "predicted_bulk": 121.13,
+      "actual_shear": 52.7704161474,
+      "predicted_shear": 50.23
+    },
+    {
+      "id": "mp-568",
+      "formula": "TiSb2",
+      "actual_bulk": 88.8507203299,
+      "predicted_bulk": 85.543,
+      "actual_shear": 53.8156229161,
+      "predicted_shear": 44.191
+    },
+    {
+      "id": "mp-505822",
+      "formula": "TiSiRu",
+      "actual_bulk": 191.496368119,
+      "predicted_bulk": 182.436,
+      "actual_shear": 77.14624490119999,
+      "predicted_shear": 90.287
+    },
+    {
+      "id": "mp-4076",
+      "formula": "VCoSb",
+      "actual_bulk": 140.939959476,
+      "predicted_bulk": 143.81,
+      "actual_shear": 55.688345903999995,
+      "predicted_shear": 58.319
+    },
+    {
+      "id": "mp-2851",
+      "formula": "VSb2",
+      "actual_bulk": 98.3751285915,
+      "predicted_bulk": 93.275,
+      "actual_shear": 47.156327832399995,
+      "predicted_shear": 52.044
+    },
+    {
+      "id": "mp-31455",
+      "formula": "VSbRu",
+      "actual_bulk": 164.457551722,
+      "predicted_bulk": 127.196,
+      "actual_shear": 48.916645278500006,
+      "predicted_shear": 44.256
+    },
+    {
+      "id": "mp-2451",
+      "formula": "YAl3",
+      "actual_bulk": 71.74539377159999,
+      "predicted_bulk": 81.788,
+      "actual_shear": 50.7401414029,
+      "predicted_shear": 44.689
+    },
+    {
+      "id": "mp-22275",
+      "formula": "YSnPt",
+      "actual_bulk": 108.40671504299999,
+      "predicted_bulk": 96.033,
+      "actual_shear": 41.0477542908,
+      "predicted_shear": 43.647
+    },
+    {
+      "id": "mp-22260",
+      "formula": "Y(MnSn)6",
+      "actual_bulk": 110.129827443,
+      "predicted_bulk": 110.325,
+      "actual_shear": 71.2846594618,
+      "predicted_shear": 51.38
+    },
+    {
+      "id": "mp-16514",
+      "formula": "Al3Ni5",
+      "actual_bulk": 167.185870642,
+      "predicted_bulk": 176.138,
+      "actual_shear": 74.7401807834,
+      "predicted_shear": 90.36
+    },
+    {
+      "id": "mp-12777",
+      "formula": "AlCu3",
+      "actual_bulk": 130.547092815,
+      "predicted_bulk": 146.318,
+      "actual_shear": 45.6364284006,
+      "predicted_shear": 65.775
+    },
+    {
+      "id": "mp-13453",
+      "formula": "BePd3",
+      "actual_bulk": 161.751650492,
+      "predicted_bulk": 172.48,
+      "actual_shear": 37.2680481042,
+      "predicted_shear": 72.136
+    },
+    {
+      "id": "mp-30485",
+      "formula": "Ca3Zn",
+      "actual_bulk": 22.1311852712,
+      "predicted_bulk": 25.893,
+      "actual_shear": 8.85741526318,
+      "predicted_shear": 12.595
+    },
+    {
+      "id": "mp-11957",
+      "formula": "CaSn2Ir",
+      "actual_bulk": 76.9152590507,
+      "predicted_bulk": 73.355,
+      "actual_shear": 37.8030447909,
+      "predicted_shear": 30.905
+    },
+    {
+      "id": "mp-510623",
+      "formula": "Fe3C",
+      "actual_bulk": 223.23786994900001,
+      "predicted_bulk": 226.865,
+      "actual_shear": 80.750166795,
+      "predicted_shear": 97.523
+    },
+    {
+      "id": "mp-568718",
+      "formula": "HfAl3",
+      "actual_bulk": 106.03289474399999,
+      "predicted_bulk": 122.565,
+      "actual_shear": 79.7905830328,
+      "predicted_shear": 69.952
+    },
+    {
+      "id": "mp-5221",
+      "formula": "HfAlCo2",
+      "actual_bulk": 172.35025848799998,
+      "predicted_bulk": 162.041,
+      "actual_shear": 88.8911833097,
+      "predicted_shear": 73.842
+    },
+    {
+      "id": "mp-16501",
+      "formula": "HfAlPd2",
+      "actual_bulk": 163.469991587,
+      "predicted_bulk": 155.772,
+      "actual_shear": 26.270155043400003,
+      "predicted_shear": 67.554
+    },
+    {
+      "id": "mp-11453",
+      "formula": "HfPd3",
+      "actual_bulk": 178.51656751,
+      "predicted_bulk": 185.779,
+      "actual_shear": 84.6182697073,
+      "predicted_shear": 71.62
+    },
+    {
+      "id": "mp-11456",
+      "formula": "HfPt3",
+      "actual_bulk": 232.92282956,
+      "predicted_bulk": 231.044,
+      "actual_shear": 105.815960927,
+      "predicted_shear": 83.783
+    },
+    {
+      "id": "mp-16271",
+      "formula": "Li2CdSb",
+      "actual_bulk": 38.1622104629,
+      "predicted_bulk": 42.211,
+      "actual_shear": 14.1284106755,
+      "predicted_shear": 23.124
+    },
+    {
+      "id": "mp-10180",
+      "formula": "Li2SbPd",
+      "actual_bulk": 65.6266771853,
+      "predicted_bulk": 58.986,
+      "actual_shear": 26.9135072058,
+      "predicted_shear": 28.627
+    },
+    {
+      "id": "mp-3034",
+      "formula": "MgAl2Cu",
+      "actual_bulk": 77.9452355188,
+      "predicted_bulk": 88.593,
+      "actual_shear": 48.1287310511,
+      "predicted_shear": 52.281
+    },
+    {
+      "id": "mp-1111",
+      "formula": "Mn5Si3",
+      "actual_bulk": 148.060235626,
+      "predicted_bulk": 201.177,
+      "actual_shear": 46.2583081892,
+      "predicted_shear": 112.164
+    },
+    {
+      "id": "mp-5529",
+      "formula": "MnFe2Si",
+      "actual_bulk": 232.867825781,
+      "predicted_bulk": 203.68,
+      "actual_shear": 97.08561099139999,
+      "predicted_shear": 96.269
+    },
+    {
+      "id": "mp-3155",
+      "formula": "Sc3FeC4",
+      "actual_bulk": 178.04129753400002,
+      "predicted_bulk": 184.52,
+      "actual_shear": 120.449351597,
+      "predicted_shear": 122.935
+    },
+    {
+      "id": "mp-17695",
+      "formula": "Sc5Sn3",
+      "actual_bulk": 72.0124591561,
+      "predicted_bulk": 69.289,
+      "actual_shear": 50.777669047299995,
+      "predicted_shear": 37.428
+    },
+    {
+      "id": "mp-1841",
+      "formula": "SiIr3",
+      "actual_bulk": 299.001824373,
+      "predicted_bulk": 236.686,
+      "actual_shear": 119.237990311,
+      "predicted_shear": 106.257
+    },
+    {
+      "id": "mp-20622",
+      "formula": "SiPd3",
+      "actual_bulk": 160.832109798,
+      "predicted_bulk": 164.389,
+      "actual_shear": 44.1991641223,
+      "predicted_shear": 47.078
+    },
+    {
+      "id": "mp-13363",
+      "formula": "SiPt3",
+      "actual_bulk": 205.090150512,
+      "predicted_bulk": 208.896,
+      "actual_shear": 59.7478991215,
+      "predicted_shear": 73.059
+    },
+    {
+      "id": "mp-2108",
+      "formula": "Ti5Si3",
+      "actual_bulk": 138.960046366,
+      "predicted_bulk": 140.261,
+      "actual_shear": 94.3617479711,
+      "predicted_shear": 81.999
+    },
+    {
+      "id": "mp-20586",
+      "formula": "VCo2Si",
+      "actual_bulk": 213.11023046900002,
+      "predicted_bulk": 204.086,
+      "actual_shear": 66.1626869921,
+      "predicted_shear": 98.8
+    },
+    {
+      "id": "mp-567412",
+      "formula": "Y5Sn3",
+      "actual_bulk": 62.46271597,
+      "predicted_bulk": 50.981,
+      "actual_shear": 44.412117252,
+      "predicted_shear": 27.694
+    },
+    {
+      "id": "mp-2349",
+      "formula": "YCd3",
+      "actual_bulk": 55.8112846819,
+      "predicted_bulk": 61.701,
+      "actual_shear": 23.6924070923,
+      "predicted_shear": 26.762
+    },
+    {
+      "id": "mp-571059",
+      "formula": "YCd3",
+      "actual_bulk": 55.4386299267,
+      "predicted_bulk": 64.84,
+      "actual_shear": 18.6885826883,
+      "predicted_shear": 27.881
+    },
+    {
+      "id": "mp-5538",
+      "formula": "YSnPd2",
+      "actual_bulk": 107.75645491700001,
+      "predicted_bulk": 112.571,
+      "actual_shear": 25.0154814237,
+      "predicted_shear": 44.404
+    },
+    {
+      "id": "mp-4756",
+      "formula": "ZnSnSb2",
+      "actual_bulk": 40.4091301365,
+      "predicted_bulk": 43.334,
+      "actual_shear": 22.8826157523,
+      "predicted_shear": 24.388
+    },
+    {
+      "id": "mp-570784",
+      "formula": "Hf2Al3C4",
+      "actual_bulk": 196.711948813,
+      "predicted_bulk": 198.741,
+      "actual_shear": 156.449396737,
+      "predicted_shear": 129.889
+    },
+    {
+      "id": "mp-18167",
+      "formula": "Ca3Cd2",
+      "actual_bulk": 28.6657448871,
+      "predicted_bulk": 31.182,
+      "actual_shear": 14.777187056099999,
+      "predicted_shear": 16.015
+    },
+    {
+      "id": "mp-30594",
+      "formula": "Cu4Pd",
+      "actual_bulk": 145.878884985,
+      "predicted_bulk": 151.673,
+      "actual_shear": 49.142687201899996,
+      "predicted_shear": 52.34
+    },
+    {
+      "id": "mp-8462",
+      "formula": "Hf3Al2",
+      "actual_bulk": 114.99169437,
+      "predicted_bulk": 116.455,
+      "actual_shear": 63.795198971800005,
+      "predicted_shear": 56.298
+    },
+    {
+      "id": "mp-625",
+      "formula": "Mg3Ru2",
+      "actual_bulk": 107.493092804,
+      "predicted_bulk": 95.73,
+      "actual_shear": 51.146572578999994,
+      "predicted_shear": 45.012
+    },
+    {
+      "id": "mp-1393",
+      "formula": "Sn4Au",
+      "actual_bulk": 51.2062079603,
+      "predicted_bulk": 59.284,
+      "actual_shear": 11.303419042,
+      "predicted_shear": 23.543
+    },
+    {
+      "id": "mp-16488",
+      "formula": "Al9Co2",
+      "actual_bulk": 106.10178039700001,
+      "predicted_bulk": 110.485,
+      "actual_shear": 73.85708166939999,
+      "predicted_shear": 59.636
+    },
+    {
+      "id": "mp-11176",
+      "formula": "Ca3(SiIr)4",
+      "actual_bulk": 131.563643103,
+      "predicted_bulk": 93.377,
+      "actual_shear": 51.457864031099994,
+      "predicted_shear": 38.474
+    },
+    {
+      "id": "mp-10245",
+      "formula": "Hf3(CuSi)4",
+      "actual_bulk": 153.481403783,
+      "predicted_bulk": 162.261,
+      "actual_shear": 82.8739638262,
+      "predicted_shear": 84.415
+    },
+    {
+      "id": "mp-16960",
+      "formula": "AlPt2",
+      "actual_bulk": 206.485205555,
+      "predicted_bulk": 197.902,
+      "actual_shear": 85.0750926872,
+      "predicted_shear": 68.844
+    },
+    {
+      "id": "mp-2031",
+      "formula": "Be2Cu",
+      "actual_bulk": 136.68568819799998,
+      "predicted_bulk": 155.935,
+      "actual_shear": 125.412948194,
+      "predicted_shear": 111.406
+    },
+    {
+      "id": "mp-333",
+      "formula": "HfFe2",
+      "actual_bulk": 162.042951449,
+      "predicted_bulk": 184.424,
+      "actual_shear": 82.1822587157,
+      "predicted_shear": 73.09
+    },
+    {
+      "id": "mp-514",
+      "formula": "HfZn2",
+      "actual_bulk": 113.15620294,
+      "predicted_bulk": 147.909,
+      "actual_shear": 58.115247300600004,
+      "predicted_shear": 66.535
+    },
+    {
+      "id": "mp-11644",
+      "formula": "Li2Ca",
+      "actual_bulk": 15.9849770871,
+      "predicted_bulk": 27.659,
+      "actual_shear": 7.59637345483,
+      "predicted_shear": 14.433
+    },
+    {
+      "id": "mp-30764",
+      "formula": "LiPt2",
+      "actual_bulk": 136.494642612,
+      "predicted_bulk": 107.872,
+      "actual_shear": 70.1477321506,
+      "predicted_shear": 40.624
+    },
+    {
+      "id": "mp-21894",
+      "formula": "LiSn4Ir",
+      "actual_bulk": 69.0271831096,
+      "predicted_bulk": 65.787,
+      "actual_shear": 47.7227671087,
+      "predicted_shear": 25.064
+    },
+    {
+      "id": "mp-1038",
+      "formula": "MgCu2",
+      "actual_bulk": 94.1478259192,
+      "predicted_bulk": 98.004,
+      "actual_shear": 37.5485562678,
+      "predicted_shear": 47.654
+    },
+    {
+      "id": "mp-540",
+      "formula": "ScFe2",
+      "actual_bulk": 127.91368207100001,
+      "predicted_bulk": 144.386,
+      "actual_shear": 65.042291073,
+      "predicted_shear": 47.699
+    },
+    {
+      "id": "mp-2125",
+      "formula": "TeO2",
+      "actual_bulk": 22.551,
+      "predicted_bulk": 46.828,
+      "actual_shear": 16.941,
+      "predicted_shear": 34.532
+    },
+    {
+      "id": "mp-2552",
+      "formula": "TeO3",
+      "actual_bulk": 91.99,
+      "predicted_bulk": 101.824,
+      "actual_shear": 96.441,
+      "predicted_shear": 60.221
+    },
+    {
+      "id": "mp-669546",
+      "formula": "AlPd",
+      "actual_bulk": 149.70739442200002,
+      "predicted_bulk": 147.169,
+      "actual_shear": 63.2523035035,
+      "predicted_shear": 56.967
+    },
+    {
+      "id": "mp-1475",
+      "formula": "Be12Mo",
+      "actual_bulk": 140.522798747,
+      "predicted_bulk": 137.365,
+      "actual_shear": 149.924021128,
+      "predicted_shear": 133.085
+    },
+    {
+      "id": "mp-567842",
+      "formula": "TaBe12",
+      "actual_bulk": 136.97260811299998,
+      "predicted_bulk": 137.887,
+      "actual_shear": 142.666532914,
+      "predicted_shear": 126.567
+    },
+    {
+      "id": "mp-30177",
+      "formula": "Y(Al2Cr)4",
+      "actual_bulk": 119.55757460299999,
+      "predicted_bulk": 113.966,
+      "actual_shear": 78.09886690270001,
+      "predicted_shear": 74.018
+    },
+    {
+      "id": "mp-11029",
+      "formula": "Y(Al2Cu)4",
+      "actual_bulk": 100.79801886899999,
+      "predicted_bulk": 116.88,
+      "actual_shear": 60.1632654691,
+      "predicted_shear": 73.004
+    },
+    {
+      "id": "mp-173",
+      "formula": "MnAl6",
+      "actual_bulk": 103.798144478,
+      "predicted_bulk": 106.413,
+      "actual_shear": 67.3600273754,
+      "predicted_shear": 67.048
+    },
+    {
+      "id": "mp-30180",
+      "formula": "Al4Mo",
+      "actual_bulk": 111.29799235,
+      "predicted_bulk": 121.121,
+      "actual_shear": 74.1273476466,
+      "predicted_shear": 85.048
+    },
+    {
+      "id": "mp-19399",
+      "formula": "Cr2O3",
+      "actual_bulk": 204.632,
+      "predicted_bulk": 156.877,
+      "actual_shear": 114.20700000000001,
+      "predicted_shear": 72.733
+    },
+    {
+      "id": "mp-7557",
+      "formula": "Nb5SiSn2",
+      "actual_bulk": 162.30864826799998,
+      "predicted_bulk": 138.965,
+      "actual_shear": 83.08277341590001,
+      "predicted_shear": 66.161
+    },
+    {
+      "id": "mp-1371",
+      "formula": "Sn3Pd",
+      "actual_bulk": 64.1378893847,
+      "predicted_bulk": 72.317,
+      "actual_shear": 25.374171855700002,
+      "predicted_shear": 29.608
+    },
+    {
+      "id": "mp-672287",
+      "formula": "Li13Si4",
+      "actual_bulk": 32.4873256092,
+      "predicted_bulk": 32.536,
+      "actual_shear": 27.635085220300002,
+      "predicted_shear": 25.235
+    },
+    {
+      "id": "mp-505527",
+      "formula": "Ti5Si4",
+      "actual_bulk": 142.185647464,
+      "predicted_bulk": 142.596,
+      "actual_shear": 94.60493192450001,
+      "predicted_shear": 88.219
+    },
+    {
+      "id": "mp-8648",
+      "formula": "TiFeSi",
+      "actual_bulk": 183.312295738,
+      "predicted_bulk": 183.393,
+      "actual_shear": 108.76319592899999,
+      "predicted_shear": 98.747
+    },
+    {
+      "id": "mp-11560",
+      "formula": "TiSiRu",
+      "actual_bulk": 202.24880149700002,
+      "predicted_bulk": 184.612,
+      "actual_shear": 103.188417714,
+      "predicted_shear": 91.531
+    },
+    {
+      "id": "mp-846",
+      "formula": "Hf2Al3",
+      "actual_bulk": 113.94733292,
+      "predicted_bulk": 117.635,
+      "actual_shear": 66.96122987390001,
+      "predicted_shear": 67.23
+    },
+    {
+      "id": "mp-22040",
+      "formula": "Sn7Ir3",
+      "actual_bulk": 102.307231249,
+      "predicted_bulk": 115.073,
+      "actual_shear": 59.990509858900005,
+      "predicted_shear": 44.563
+    },
+    {
+      "id": "mp-1346",
+      "formula": "B6O",
+      "actual_bulk": 226.90599999999998,
+      "predicted_bulk": 134.871,
+      "actual_shear": 207.607,
+      "predicted_shear": 88.748
+    },
+    {
+      "id": "mp-1046",
+      "formula": "NbSn2",
+      "actual_bulk": 96.01663267129999,
+      "predicted_bulk": 90.591,
+      "actual_shear": 48.9353193511,
+      "predicted_shear": 45.294
+    },
+    {
+      "id": "mp-569815",
+      "formula": "Si2Ru",
+      "actual_bulk": 184.62672844099998,
+      "predicted_bulk": 190.99,
+      "actual_shear": 108.221389254,
+      "predicted_shear": 104.139
+    },
+    {
+      "id": "mp-593",
+      "formula": "Al4Cu9",
+      "actual_bulk": 129.365675809,
+      "predicted_bulk": 139.364,
+      "actual_shear": 69.7401363799,
+      "predicted_shear": 63.144
+    },
+    {
+      "id": "mp-2151",
+      "formula": "Mg17Al12",
+      "actual_bulk": 49.67016423770001,
+      "predicted_bulk": 61.437,
+      "actual_shear": 23.8402286217,
+      "predicted_shear": 37.383
+    },
+    {
+      "id": "mp-216",
+      "formula": "Sc2O3",
+      "actual_bulk": 167.458,
+      "predicted_bulk": 146.691,
+      "actual_shear": 79.217,
+      "predicted_shear": 70.361
+    },
+    {
+      "id": "mp-1982",
+      "formula": "Al21Pt8",
+      "actual_bulk": 132.900984564,
+      "predicted_bulk": 141.428,
+      "actual_shear": 62.3774589907,
+      "predicted_shear": 53.388
+    }
+  ]
+}
